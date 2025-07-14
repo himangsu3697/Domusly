@@ -1,0 +1,190 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="small">
+        <button class="btn mt-2" type="button" style="background-color: #fe424d; color: white; border-radius: 1rem;"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Show
+            Categories</button>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Categories</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="filters">
+                    <div class="filter">
+                        <a href="/listings/trending/filter">
+                            <div><i class="fa-solid fa-fire"></i></div>
+                            <p>Trending</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/rooms/filter">
+                            <div><i class="fa-solid fa-bed"></i></div>
+                            <p>Rooms</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/iconic_cities/filter">
+                            <div><i class="fa-solid fa-mountain-city"></i></div>
+                            <p>Iconic Cities</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/mountains/filter">
+                            <div><i class="fa-solid fa-mountain"></i></div>
+                            <p>Mountains</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/castles/filter">
+                            <div><i class="fa-brands fa-fort-awesome"></i></div>
+                            <p>Castles</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/amazing_pools/filter">
+                            <div><i class="fa-solid fa-person-swimming"></i></div>
+                            <p>Amazing Pools</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/camping/filter">
+                            <div><i class="fa-solid fa-campground"></i></div>
+                            <p>Camping</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/farms/filter">
+                            <div><i class="fa-solid fa-tractor"></i></div>
+                            <p>Farms</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/arctic/filter">
+                            <div><i class="fa-solid fa-snowflake"></i></div>
+                            <p>Arctic</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/domes/filter">
+                            <div><i class="fa-solid fa-igloo"></i></div>
+                            <p>Domes</p>
+                        </a>
+                    </div>
+                    <div class="filter">
+                        <a href="/listings/boats/filter">
+                            <div><i class="fa-solid fa-sailboat"></i></div>
+                            <p>Boats</p>
+                        </a>
+                    </div>
+                    <div class="tax-toggle">
+                        <div class="form-check-reverse form-switch">
+                            <input class="form-check-input taxSwitch" type="checkbox" role="switch" id="switchCheckDefault"
+                                style="cursor: pointer;">
+                            <label class="form-check-label" for="switchCheckDefault">Display totle after Taxes</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="large">
+        <div class="filters">
+            <div class="filter">
+                <a href="/listings/trending/filter">
+                    <div><i class="fa-solid fa-fire"></i></div>
+                    <p>Trending</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/rooms/filter">
+                    <div><i class="fa-solid fa-bed"></i></div>
+                    <p>Rooms</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/iconic_cities/filter">
+                    <div><i class="fa-solid fa-mountain-city"></i></div>
+                    <p>Iconic Cities</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/mountains/filter">
+                    <div><i class="fa-solid fa-mountain"></i></div>
+                    <p>Mountains</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/castles/filter">
+                    <div><i class="fa-brands fa-fort-awesome"></i></div>
+                    <p>Castles</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/amazing_pools/filter">
+                    <div><i class="fa-solid fa-person-swimming"></i></div>
+                    <p>Amazing Pools</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/camping/filter">
+                    <div><i class="fa-solid fa-campground"></i></div>
+                    <p>Camping</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/farms/filter">
+                    <div><i class="fa-solid fa-tractor"></i></div>
+                    <p>Farms</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/arctic/filter">
+                    <div><i class="fa-solid fa-snowflake"></i></div>
+                    <p>Arctic</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/domes/filter">
+                    <div><i class="fa-solid fa-igloo"></i></div>
+                    <p>Domes</p>
+                </a>
+            </div>
+            <div class="filter">
+                <a href="/listings/boats/filter">
+                    <div><i class="fa-solid fa-sailboat"></i></div>
+                    <p>Boats</p>
+                </a>
+            </div>
+            <div class="tax-toggle">
+                <div class="form-check-reverse form-switch">
+                    <input class="form-check-input taxSwitch" type="checkbox" role="switch" id="switchCheckDefault"
+                        style="cursor: pointer;">
+                    <label class="form-check-label" for="switchCheckDefault">Display totle after Taxes</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 mt-3">
+        <% for(let listing of listings) { %>
+            <a href="/listings/<%=listing._id%>" class="listing-links">
+                <div class="card col listing-card">
+                    <img src="<%=listing.image.url%>" class="card-img-top" alt="listing_image"
+                        style="height: 20rem;">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b>
+                                <%=listing.title%><br>
+                            </b>
+                            <span style="font-size:1rem">&#8377;</span><%=listing.price.toLocaleString("en-in")%>/night
+                                <i class="none">&nbsp;+18% GST</i>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <% } %>
+    </div>
+</body>
+
