@@ -10,7 +10,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'Domusly_DEV',
+    folder: 'domusly',
     allowedFormats: ["jpg", "png", "jpeg"],
     public_id: (req, file) => 'computed-filename-using-request',
   },
