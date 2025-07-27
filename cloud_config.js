@@ -12,7 +12,7 @@ const storage = new CloudinaryStorage({
   params: {
     folder: 'domusly',
     allowedFormats: ["jpg", "png", "jpeg"],
-    public_id: (req, file) => 'computed-filename-using-request',
+   unique_filename: true,
   },
 });
 
